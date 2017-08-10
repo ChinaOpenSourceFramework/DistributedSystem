@@ -1,0 +1,20 @@
+server:
+  port: 10051
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/ChinaOpenSourceFramework/DistributedSystem
+#  https 连接不用   
+#         username: 
+#         password: 
+          search-paths:
+            - config-repo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10001/eureka/,http://localhost:10002/eureka/

@@ -42,6 +42,7 @@
 		<module>ribbon1</module>
 		<module>feign1</module>
 		<module>zuul1</module>
+		<module>config</module>
 	</modules>
 
 	<dependencyManagement>
