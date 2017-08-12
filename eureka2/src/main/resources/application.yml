@@ -11,3 +11,5 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://master:10001/eureka/
+  server:
+    enable-self-preservation: false
